@@ -112,20 +112,39 @@ export const ChargesArea = styled.div`
 
 export const CardContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  border: 2px solid ${props => props.theme.colors.primary};
-  border-radius: 4px;
+  border: 2px solid #ccc;
   padding: 10px;
-  gap: 5px;
-  flex-wrap: nowrap;
+  width: 250px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  
 
   &:hover {
-    border: 2px solid ${props => rgba(props.theme.colors.primary, 0.5)};
+    border: 3px solid ${props => rgba(props.theme.colors.primary, 0.5)};
   }
 `;
+export const CardTitle = styled.h2`
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+`;
 
+export const CardInfo = styled.p`
+  font-size: 14px;
+  text-align: center;
+`;
+
+export const CardImageContainer = styled.img`
+  width: 100%;
+  height: 50%; 
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 50px;
+`;
 
 export const CardInput = styled.input.attrs({
   type: 'text',
@@ -140,8 +159,8 @@ export const CardButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25px;
-  height: 25px;
+  width: 230px;
+  height: 40px;
   background-color: ${props => props.theme.colors.alert};
   border-radius: 4px;
   margin-left: 15px;
