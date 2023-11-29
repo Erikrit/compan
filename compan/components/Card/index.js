@@ -10,7 +10,7 @@ import {
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Products from "../Products/products";
-import { productsData } from "../data";
+import { productsData, responsive } from "../data";
 
 function KitchenSinkExample() {
 
