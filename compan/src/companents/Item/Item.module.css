@@ -1,0 +1,41 @@
+.item{
+    width: 350px;
+    gap: 11px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.item p{
+    margin: 6px 0px;
+}
+.item_prices{
+    display: flex;
+    gap: 220px;
+}
+
+.item:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.item button{
+    width: 164px;
+    height: 37px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    margin-left: 42px;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+
+.item button:active{
+    background: #f3f3f3;
+}
+

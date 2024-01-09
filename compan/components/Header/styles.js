@@ -55,6 +55,11 @@ export const MenuButton = styled.div`
 	}
 `;
 
+export const ContainerUserArea = styled.div`
+	position: absolute;
+	top: 10px; 
+	right: 10px; 
+`;
 
 export const UserArea = styled.div`
 	position: relative;
@@ -66,6 +71,7 @@ export const UserArea = styled.div`
 	width: 40px;
 	margin: 0 5px;
 	cursor: pointer;
+
 
 	&:hover {
 		border: 2px solid ${props => props.theme.colors.primary};

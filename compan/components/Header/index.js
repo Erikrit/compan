@@ -13,7 +13,10 @@ import {
 	faUsers,
 	faWallet,
 	faEnvelopeOpenText,
-	faCalendarAlt,
+	faPowerOff,
+	faMoneyCheck,
+	faBullhorn,
+	faSearch,
 } from '@fortawesome/free-solid-svg-icons';
 import { useTheme } from 'styled-components';
 import {
@@ -35,63 +38,50 @@ import {
 	SideBarButtonText,
 	SideBarCollapseArea,
 	SideBarOption,
+	ContainerUserArea,
 } from './styles';
+import { CardContainer, CheckboxLabel, FilterContainer, SearchButton, SearchInput, UserIconContainer } from '../../styles/charges-batch';
+import { productsData } from '../data';
+import Products from '../Products/products';
+import KitchenSinkExample from '../Card';
+
 
 
 const modules = [
 	{
-		name: 'Agenda',
-		icon: faCalendarAlt,
-		options: [{ name: 'Agenda', target: '/[subscription]/schedule' }]
+		name: 'Home',
+		icon: faHome,
+		onClick: () => router.push(`/home`),
+	  },
+	  {
+		name: 'Anunciar',
+		icon: faBullhorn,
+		onClick: () => {
+		  // Handle Anunciar button click
+		},
+	  },
+	  {
+		name: 'Créditos',
+		icon: faMoneyCheck,
+		onClick: () => {
+		  // Handle Creditos button click
+		},
+	  },
+	  {
+		name: 'Perfil',
+		icon: faUser,
+		onClick: () => {
+		  // Handle Perfil button click
+		},
+	  },
+	  {
+		name: 'Logoff',
+		icon: faPowerOff,
+		onClick: () => {
+		  // Handle LogOff button click
+		},
 	},
-	{
-		name: 'Contatos',
-		icon: faAddressBook,
-		options: [{ name: 'Cadastro', target: '/[subscription]/contacts', permission: 'Contatos' },
-			      { name: 'Relatórios', target: '/[subscription]/reportsContacts', permission: 'RelatorioContatos' },]
-
-	},
-	{
-		name: 'Financeiro',
-		icon: faMoneyCheckAlt,
-		options: [
-			{ name: 'Contas', target: '/[subscription]/accounts' },
-			{ name: 'Lançamentos', target: '/[subscription]/bills' },
-			{ name: 'Relatórios', target: '/[subscription]/reports', permission: 'Relatorio' },
-			{ name: 'Resgate de valores', target: '/[subscription]/rescues', permission: 'Resgate'}
-		]
-	},
-	{
-		name: 'Repis',
-		icon: faWallet,
-		segment: 'union',
-		options: [
-			{ name: 'Campanhas', target: '/[subscription]/repis-campaigns', permission: 'Repis' },
-			{ name: 'Adesões', target: '/[subscription]/repis-adhesions', permission: 'Repis' },
-		],
-	},
-	{
-		name: 'Cartas de oposição',
-		icon: faEnvelopeOpenText,
-		segment: 'union',
-		options: [
-			{ name: 'Campanhas', target: '/[subscription]/opposition-letter-campaigns', permission: 'Carta de oposição' },
-			{ name: 'Solicitações', target: '/[subscription]/opposition-letter-adhesions', permission: 'Carta de oposição' },
-		],
-	},
-	{
-		name: 'Documentos',
-		icon: faFileAlt,
-		options: [{ name: 'Documentos', target: '/[subscription]/documents' }]
-	},
-	{
-		name: 'Usuários',
-		icon: faUsers,
-		options: [
-			{ name: 'Usuários', target: '/[subscription]/users' },
-		]
-	}
-];
+	];
 
 
 export default function Header(){
@@ -103,6 +93,14 @@ export default function Header(){
 	const [showMenu, setShowMenu] = useState(false);
 	const [showUserMenu, setShowUserMenu] = useState(false);
 	const [selectedModules, setSelectedModules] = useState([]);
+	const [selectedCity, setSelectedCity] = useState('');
+	const [selectedState, setSelectedState] = useState('');
+  	const [searchTerm, setSearchTerm] = useState('');
+	/* const [filteredCityState, setFilteredCityState] = useState(productsData) */
+	const [value, setValue] = useState('')
+	const [cityCheckboxChecked, setCityCheckboxChecked] = useState(false);
+	const [stateCheckboxChecked, setStateCheckboxChecked] = useState(false);
+	const [filteredItems, setFilteredItems] = useState(productsData);
 
 
 	useEffect(() => {
@@ -130,6 +128,43 @@ export default function Header(){
 		} else {
 			setSelectedModules([...selectedModules, name]);
 		}
+	}
+
+
+	const onChange = (e) => {
+		setValue(e.target.value)
+		onSearch(e.target.value)
+	}
+
+	const onSearch = (searchTerm) => {
+
+		console.log("pesquisando", filteredItems)
+
+		const newFilteredItems = productsData.filter((item) => {
+			const cityMatch = cityCheckboxChecked
+			  ? item.cidade.toLowerCase().includes(searchTerm.toLowerCase())
+			  : true;
+		
+			const stateMatch = stateCheckboxChecked
+			  ? item.estado.toLowerCase().includes(searchTerm.toLowerCase())
+			  : true;
+		
+			return cityMatch || stateMatch;
+		  });
+  
+	setFilteredItems(newFilteredItems);
+	}
+
+	
+
+	const onCityCheckboxChange = (e) => {
+		setCityCheckboxChecked(e.target.checked);
+		onSearch(value)
+	}
+	
+	const onStateCheckboxChange = (e) => {
+		setStateCheckboxChecked(e.target.checked);
+		onSearch(value)
 	}
 
 
@@ -178,18 +213,35 @@ export default function Header(){
 					<FontAwesomeIcon icon={faBars} color={theme.colors.primary}/>
 				</MenuButton>
 				<LogoImage alt='' src={theme.assets.logo}/>
-					<UserArea
-						ref={userButton}
-						onClick={() => setShowUserMenu(!showUserMenu)}
-					>
-						<FontAwesomeIcon icon={faUser} color={theme.colors.primary}/>
-						<UserOptionsContainer
-							ref={userOptions}
-							style={showUserMenu ? {display: 'flex'} : {display: 'none'}}
+					<FilterContainer id="filter-container">
+						<CheckboxLabel>
+							<input type="checkbox" id="city-checkbox" onChange={onCityCheckboxChange}/>Cidade
+						</CheckboxLabel>
+
+						<CheckboxLabel>
+							<input type="checkbox" id="state-checkbox" onChange={onStateCheckboxChange}/>Estado
+						</CheckboxLabel>
+
+						<SearchInput type="text" id="search-bar" placeholder="Pesquisar..." onChange={onChange}/>
+							
+						<SearchButton onClick={() => onSearch(value)}>
+							<FontAwesomeIcon icon={faSearch} color='white'/>
+						</SearchButton> 
+					</FilterContainer>
+					<ContainerUserArea>
+						<UserArea
+							ref={userButton}
+							onClick={() => setShowUserMenu(!showUserMenu)}
 						>
-							<UserOption >Sair</UserOption>
-						</UserOptionsContainer>
-					</UserArea>
+							<FontAwesomeIcon icon={faUser} color={theme.colors.primary}/>
+							<UserOptionsContainer
+								ref={userOptions}
+								style={showUserMenu ? {display: 'flex'} : {display: 'none'}}
+							>
+								<UserOption >Sair</UserOption>
+							</UserOptionsContainer>
+						</UserArea>
+					</ContainerUserArea>
 			</MainStrip>
 			 <SideBarArea visible={showMenu}>
 				<SideBarHeader>
@@ -203,16 +255,19 @@ export default function Header(){
 					<SideBarCloseButton/>
 				</SideBarHeader>
 				<SideBarButtonsContainer>
-					<SideBarButton
-						onClick={() => router.push(`/home`)}
+					{modules.map((item, index) => (
+						<SideBarButton
+						key={index}
+						onClick={item.onClick}
 						style={{ marginBottom: 12 }}
 					>
 						<FontAwesomeIcon
-							icon={faHome}
+							icon={item.icon}
 							color={theme.light_mode ? '#fff' : '#000'}
 						/>
-						<SideBarButtonText>Home</SideBarButtonText>
+						<SideBarButtonText>{item.name}</SideBarButtonText>
 					</SideBarButton>
+					))}
 				</SideBarButtonsContainer>
 			</SideBarArea>
 		</Container>

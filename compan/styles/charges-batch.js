@@ -94,7 +94,6 @@ export const STabPanel = styled(TabPanel)`
 	}
 `;
 
-
 export const ChargesArea = styled.div`
   display: flex;
   flex-direction: column;
@@ -111,6 +110,7 @@ export const ChargesArea = styled.div`
 
 
 export const CardContainer = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,6 +138,23 @@ export const CardInfo = styled.p`
   text-align: center;
 `;
 
+export const CardInfoCity = styled.p`
+  font-size: 14px;
+  text-align: left;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  
+  `;
+export const CardInfoState = styled.p`
+  font-size: 14px;
+  text-align: left;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  
+  `;
+
 export const CardImageContainer = styled.img`
   width: 100%;
   height: 50%; 
@@ -155,16 +172,67 @@ export const CardInput = styled.input.attrs({
 `;
 
 
-export const CardButton = styled.div`
+
+export const SearchButton = styled.div`
   display: flex;
+  position: absolute;
   align-items: center;
   justify-content: center;
-  width: 230px;
+  width: 37px;
+  height: 31px;
+  background-color: ${props => props.theme.colors.alert};
+  border-radius: 50px;
+  margin-left: 365px;
+  cursor: pointer;
+  color: white;
+  margin-top: -1px;
+  
+
+
+  &:hover{
+    background-color: ${props => rgba(props.theme.colors.alert, 0.8)};
+  }
+
+  svg{
+    font-size: 14px;
+  }
+`;
+
+
+export const FilterContainer = styled.div`
+  display: flex;
+  align-items: center;
+  left
+`;
+
+export const CheckboxLabel = styled.label`
+  margin-right: 10px; 
+  margin-left: 5px;
+`;
+
+export const SearchInput = styled.input`
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 8px;
+  text-align: center; 
+  `;
+
+export const CardButton = styled.div`
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
   height: 40px;
   background-color: ${props => props.theme.colors.alert};
   border-radius: 4px;
-  margin-left: 15px;
+  margin-left: 145px;
   cursor: pointer;
+  bottom: 15px;
+  color: white;
+  
+
 
   &:hover{
     background-color: ${props => rgba(props.theme.colors.alert, 0.8)};

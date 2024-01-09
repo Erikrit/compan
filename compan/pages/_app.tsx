@@ -6,12 +6,17 @@ import { ThemeProvider, createGlobalStyle } from 'styled-components'
 import { ApolloProvider } from '@apollo/client';
 import { ToastContainer } from 'react-toastify';
 import client from '../services/apolloClient';
+import "../src/companents/navbar/Navbar.module.css"
+
 
 
 config.autoAddCss = false;
 
 
 const GlobalStyle = createGlobalStyle`
+  *{
+    margin: 0;
+  }
   body {
     position: relative;
     margin: 0;
