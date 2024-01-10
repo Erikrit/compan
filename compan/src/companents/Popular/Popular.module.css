@@ -24,3 +24,32 @@
     margin-top: 50px;
     gap: 30px;
 }
+
+.searchContainer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.searchIcon{
+    cursor: pointer;
+    font-size: 30px;
+    color: #171717;
+}
+
+.exibirbotao button{
+    width: 152px;
+    height: 49px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+
+.popular p{
+    font-size: 19px;
+}

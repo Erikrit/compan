@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import cesta from '../Assets/cesta.png'
 import logoAleatorio from '../Assets/logoAleatorio.png'
 import { Link } from 'react-router-dom';
+import { FaShoppingBag } from "react-icons/fa";
 
 
 export const Navbar = () => {
@@ -27,7 +28,7 @@ export const Navbar = () => {
         </ul>
         <div className={styles.nav_login_cart}>
         <Link style={{textDecoration: 'none'}} to='/login'><button>Login</button></Link>
-        <Link style={{textDecoration: 'none'}} to='/cart'><FontAwesomeIcon icon={faCartPlus}/>  </Link> 
+        <Link style={{textDecoration: 'none'}} to='/cart'><FaShoppingBag style={{ fontSize: '30px' }}/>  </Link> 
             <div className={styles.nav_cart_count}>0</div>
         </div>
     </div>

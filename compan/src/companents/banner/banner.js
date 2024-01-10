@@ -7,16 +7,16 @@ const Banner = () => {
   return (
     <div className={styles.banner}>
       <div className={styles.banner_left}>
-        <h2>APENAS PEÇAS NOVAS</h2>
+        <h2>NÃO PERCA A CHANCE</h2>
         <div>
-          <p>Novas</p>
-          <p>Coleções</p>
+          <p>Novos</p>
+          <p>Itens</p>
           <p>Para todos os gostos</p>
         </div>
-        <div className={styles.banner_lastet_btn}>
+        {/* <div className={styles.banner_lastet_btn}>
           <div>Ultimos Lançamentos</div>
           <FontAwesomeIcon icon={faArrowRight} />
-        </div>
+        </div> */}
       </div>
       <div className={styles.banner_right}>
         {/* caso precise colocar imagem */}

@@ -1,6 +1,6 @@
 .banner{
     height: 100vh;
-    background: linear-gradient(180deg, #fde1ff, #e1ffea22 30%), url('../Assets/CozinhaPrincipal.jpg');
+    background: linear-gradient(180deg, #f4e1ff, #e1ffea22 30%), url('../Assets/CozinhaPrincipal.jpg');
     display: flex;
     background-size: cover;
     background-position: center;

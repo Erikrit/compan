@@ -14,6 +14,7 @@ import Products from "../Products/Products";
 import Cart from "../Cart/cart";
 import LoginSingup from "../Login/LoginSingup";
 import HomeShop from "../HomeShop/HomeShop";
+import Footer from "../../src/companents/Footer/Footer";
 
 
 
@@ -34,13 +35,8 @@ export default function HomePage(){
                 <Route path="cart" element={<Cart/>}/>
                 <Route path="login" element={<LoginSingup/>}/>
             </Routes>
-
-
+            <Footer/>
            </BrowserRouter>
-        
-
-            
-            
         </div>
     );
 
