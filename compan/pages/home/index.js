@@ -25,12 +25,12 @@ export default function HomePage(){
            <BrowserRouter>
            <Navbar/>
             <Routes>
-                <Route path="/" element={<HomeShop/>}/>
+                <Route path="/home" element={<HomeShop/>}/>
                 <Route path="/anuncio" element={<Anuncio/>}/>
                 <Route path="/credit" element={<Credit/>}/>
                 <Route path="/perfil" element={<Perfil/>}/>
                 <Route path="products" element={<Products/>}>
-                    <Route path=":produtID" element={<Products/>}/>
+                    <Route path=":productId" element={<Products/>}/>
                 </Route>
                 <Route path="cart" element={<Cart/>}/>
                 <Route path="login" element={<LoginSingup/>}/>

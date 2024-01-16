@@ -1,9 +1,10 @@
 .banner{
     height: 100vh;
-    background: linear-gradient(180deg, #f4e1ff, #e1ffea22 30%), url('../Assets/CozinhaPrincipal.jpg');
+    background: linear-gradient(180deg, #f4e1ff, #e1ffea22 30%), url('../Assets/bannerAnuncio2.jpg');
     display: flex;
     background-size: cover;
     background-position: center;
+    border-radius: 50px;
 }
 
 .banner_left{
@@ -12,8 +13,9 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding-left: 180px;
+    padding-left: 100px;
     line-height: 1.1;
+    margin-bottom: 200px;
 }
 
 .banner_left h2 {
@@ -37,10 +39,11 @@
     height: 70px;
     border-radius: 75px;
     margin-top: 30px;
-    background: #ff4141;
+    background: #ff5555;
     color: white;
     font-size: 22px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .banner_right{

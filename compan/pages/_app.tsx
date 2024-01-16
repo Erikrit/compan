@@ -7,6 +7,7 @@ import { ApolloProvider } from '@apollo/client';
 import { ToastContainer } from 'react-toastify';
 import client from '../services/apolloClient';
 import "../src/companents/navbar/Navbar.module.css"
+import ShopContextProvide from '../src/context/ShopContext'
 
 
 
@@ -58,6 +59,7 @@ function Theme({ children }){
 
 function MyApp({ Component, pageProps }) {
   return (
+    <ShopContextProvide>
       <ApolloProvider client={client}>
           <Theme>
             <GlobalStyle/>
@@ -70,6 +72,7 @@ function MyApp({ Component, pageProps }) {
             <Component {...pageProps} />
           </Theme>
       </ApolloProvider>
+      </ShopContextProvide>
   )
 }
 

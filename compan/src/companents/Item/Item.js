@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from "./Item.module.css";
 import { CardButton } from '../../../styles/charges-batch';
+import { Link } from 'react-router-dom';
 
 
 export const Item = (props) => {
   return (
     <div className={styles.item}>
-        <img src={props.image} alt=''/>
+        <Link to={`/products/${props.id}`}><img src={props.image} alt=''/></Link>
         <p>{props.name}</p>
         <div className={styles.item_prices}>
             R$ {props.price}
