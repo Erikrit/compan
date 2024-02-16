@@ -59,8 +59,9 @@ function Theme({ children }){
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ShopContextProvide>
+   
       <ApolloProvider client={client}>
+        <ShopContextProvide>
           <Theme>
             <GlobalStyle/>
             <ToastContainer
@@ -71,8 +72,9 @@ function MyApp({ Component, pageProps }) {
             />
             <Component {...pageProps} />
           </Theme>
+          </ShopContextProvide>
       </ApolloProvider>
-      </ShopContextProvide>
+
   )
 }
 

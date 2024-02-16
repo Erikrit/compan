@@ -24,16 +24,21 @@ import produto_22 from '../Assets/produto_22.webp'
 export const productsData = [
   {
     id: 1,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "599,90",
-    name: "KitchenSink Tijela Única",
+    category:'acompanhante',
+    subcaterory:'mulher',
+    imgurl: "https://www.tudoemdia.com/wp-content/uploads/2010/04/lingerie.gif",
+    price: "-",
+    name: "Sei la",
     description:
-      "Esta pia de cozinha é feita de aço inoxidável de alta qualidade para resistência e durabilidade.",
+      "Acompanhante por uma noite. Entrar em contato parar mais informações",
     cidade: "São Paulo",
     estado: "SP"
   },
   {
     id: 2,
+    category:'casa',
+    subcaterory:'cozinha',
+    subcaterory:'cozinha',
     imgurl:"https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
     price: "6.032,68",
     name: "KitchenSink Preta 304",
@@ -44,55 +49,68 @@ export const productsData = [
   },
   {
     id: 3,
-    imgurl:"https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "5.504,75",
-    name: "KitchenSink de alto e baixo",
+    category:'roupa',
+    subcaterory:'camisa',
+    imgurl:"https://chicorei.imgix.net/16029/ab5aafc0-c93c-11eb-a2ec-9b844242a300.jpg?auto=compress,format&q=65&w=1100&h=1648&fit=crop&crop=top",
+    price: "89.99",
+    name: "Camisa Quadros",
     description:
-      "pia de alto e baixo, 3 orifícios, com suporte de faca, dispensador de sabonete, conjunto de drenagem.",
+      "Camisa Masculina e Femina com estampas de quadros de artistas famosos!",
     cidade: "Belo Horizonte",
     estado: "MG"
   },
   {
     id: 4,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "1.800,00",
-    name: "KitchenSink de pedra",
-    description: "Pia cozinha completa - pedra + cuba _ torneira misturador.",
+    category:'acompanhante',
+    subcaterory:'homem',
+    imgurl:"https://media.istockphoto.com/id/519032061/pt/foto/bonito-tronco-nu-jovem-ao-ar-livre.jpg?s=612x612&w=0&k=20&c=nNdNRnmPA55GpsJAaa4XzQB3RkicDD23ABBuPqS-JVg=",
+    price: "-",
+    name: "Sei la",
+    description:
+      "Acompanhante por uma noite. Entrar em contato parar mais informações",
     cidade: "Sinop",
     estado: "MT"
   },
   {
     id: 5,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "3.540.98",
-    name: "KitchenSink 3 em 1",
+    category:'roupa',
+    subcaterory:'camisa',
+    imgurl:"https://chicorei.imgix.net/16029/ab5aafc0-c93c-11eb-a2ec-9b844242a300.jpg?auto=compress,format&q=65&w=1100&h=1648&fit=crop&crop=top",
+    price: "89.99",
+    name: "Camisa Quadros",
     description:
-      "Esta pia de cozinha de aço inoxidável também possui um revestimento nano escovado na superfície que é resistente à ferrugem e manchas por uma longa vida.",
+      "Camisa Masculina e Femina com estampas de quadros de artistas famosos!",
     cidade: "São Paulo",
     estado: "SP"
   },
   {
     id: 6,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "2.350,90",
-    name: "KitchenSink",
+    category:'acompanhante',
+    subcaterory:'mulher',
+    imgurl: "https://www.tudoemdia.com/wp-content/uploads/2010/04/lingerie.gif",
+    price: "-",
+    name: "Sei la",
     description:
-      "EProjetado para lidar com panelas de ferro fundido ou quentes resistentes diretamente do forno. Fácil de manter.",
+      "Acompanhante por uma noite. Entrar em contato parar mais informações",
     cidade: "Curitiba",
     estado: "PR"
   },
   {
     id: 7,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "1.350,00",
-    name: "KitchenSink Gourmet",
+    category:'automovel',
+    subcaterory:'carro',
+    imgurl: "https://revistacarro.com.br/wp-content/uploads/2023/03/vendas-carros-usados-1280x768.jpg",
+    price: "20.500,00",
+    name: "Carros Novos e Semi-Novos",
     description:
-      "Esta pia de cozinha GourmetProjetado para lidar com panelas de ferro fundido ou quentes resistentes diretamente do forno. Fácil de manter.",
+      "Carros novos e semi-novos! Entre em contato ou venha nos visitar!",
     cidade: "Maringa",
     estado: "SP"
   },
   {
     id: 8,
+    category:'casa',
+    subcaterory:'cozinha',
     imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
     price: "378,00",
     name: "Torneira para Pia de Cozinha",
@@ -103,96 +121,116 @@ export const productsData = [
   },
   {
     id: 9,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "2.350,90",
-    name: "KitchenSink",
+    category:'acompanhante',
+    subcaterory:'homem',
+    imgurl:"https://media.istockphoto.com/id/519032061/pt/foto/bonito-tronco-nu-jovem-ao-ar-livre.jpg?s=612x612&w=0&k=20&c=nNdNRnmPA55GpsJAaa4XzQB3RkicDD23ABBuPqS-JVg=",
+    price: "-",
+    name: "Sei la",
     description:
-      "EProjetado para lidar com panelas de ferro fundido ou quentes resistentes diretamente do forno. Fácil de manter.",
+      "Acompanhante por uma noite. Entrar em contato parar mais informações",
     cidade: "Curitiba",
     estado: "PR"
   },
   {
     id: 10,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "1.350,00",
-    name: "KitchenSink Gourmet",
+    category:'roupa',
+    subcaterory:'camisa',
+    imgurl:"https://chicorei.imgix.net/16029/ab5aafc0-c93c-11eb-a2ec-9b844242a300.jpg?auto=compress,format&q=65&w=1100&h=1648&fit=crop&crop=top",
+    price: "89.99",
+    name: "Camisa Quadros",
     description:
-      "Esta pia de cozinha GourmetProjetado para lidar com panelas de ferro fundido ou quentes resistentes diretamente do forno. Fácil de manter.",
+      "Camisa Masculina e Femina com estampas de quadros de artistas famosos!",
     cidade: "Maringa",
     estado: "SP"
   },
   {
     id: 11,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "378,00",
-    name: "Torneira para Pia de Cozinha",
+    category:'automovel',
+    subcaterory:'carro',
+    imgurl: "https://revistacarro.com.br/wp-content/uploads/2023/03/vendas-carros-usados-1280x768.jpg",
+    price: "20.500,00",
+    name: "Carros Novos e Semi-Novos",
     description:
-      "Torneira De Pia Cozinha Com Ducha Spray Misturador Monocomando Luxo Prata 9109c Luuk Young ESTÁ AQUI!",
+      "Carros novos e semi-novos! Entre em contato ou venha nos visitar!",
     cidade: "São Paulo",
     estado: "SP"
   },
   {
     id: 12,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "2.350,90",
-    name: "KitchenSink",
+    category:'eletronico',
+    subcategory:'computador',
+    imgurl: "https://photos.enjoei.com.br/pc-gamer-completo-intel-i5-rx-580-8gb-68599164/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8yMzU2NzkyMC84Mjg0MGIxZGRkODc1YmRmYzhhZGFlNjM5MmM3Y2VlMy5qcGc",
+    price: "7.799",
+    name: "Computador Gamer",
     description:
-      "EProjetado para lidar com panelas de ferro fundido ou quentes resistentes diretamente do forno. Fácil de manter.",
+      "Computador Gamer em otimas condições! Intel i5 9400f, placa de video rx 580 8gb, placa-mae b360m aorus, memoria ram (2x8gb) 2400mhz",
     cidade: "Curitiba",
     estado: "PR"
   },
   {
     id: 13,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "1.350,00",
-    name: "KitchenSink Gourmet",
+    category:'automovel',
+    subcaterory:'carro',
+    imgurl: "https://revistacarro.com.br/wp-content/uploads/2023/03/vendas-carros-usados-1280x768.jpg",
+    price: "20.500,00",
+    name: "Carros Novos e Semi-Novos",
     description:
-      "Esta pia de cozinha GourmetProjetado para lidar com panelas de ferro fundido ou quentes resistentes diretamente do forno. Fácil de manter.",
+      "Carros novos e semi-novos! Entre em contato ou venha nos visitar!",
     cidade: "Maringa",
     estado: "SP"
   },
   {
     id: 14,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "378,00",
-    name: "Torneira para Pia de Cozinha",
+    category:'eletronico',
+    subcategory:'computador',
+    imgurl: "https://photos.enjoei.com.br/pc-gamer-completo-intel-i5-rx-580-8gb-68599164/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8yMzU2NzkyMC84Mjg0MGIxZGRkODc1YmRmYzhhZGFlNjM5MmM3Y2VlMy5qcGc",
+    price: "7.799",
+    name: "Computador Gamer",
     description:
-      "Torneira De Pia Cozinha Com Ducha Spray Misturador Monocomando Luxo Prata 9109c Luuk Young ESTÁ AQUI!",
+      "Computador Gamer em otimas condições! Intel i5 9400f, placa de video rx 580 8gb, placa-mae b360m aorus, memoria ram (2x8gb) 2400mhz",
     cidade: "São Paulo",
     estado: "SP"
   },
   {
     id: 15,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "2.350,90",
-    name: "KitchenSink",
+    category:'eletronico',
+    subcategory:'computador',
+    imgurl: "https://photos.enjoei.com.br/pc-gamer-completo-intel-i5-rx-580-8gb-68599164/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8yMzU2NzkyMC84Mjg0MGIxZGRkODc1YmRmYzhhZGFlNjM5MmM3Y2VlMy5qcGc",
+    price: "7.799",
+    name: "Computador Gamer",
     description:
-      "EProjetado para lidar com panelas de ferro fundido ou quentes resistentes diretamente do forno. Fácil de manter.",
+      "Computador Gamer em otimas condições! Intel i5 9400f, placa de video rx 580 8gb, placa-mae b360m aorus, memoria ram (2x8gb) 2400mhz",
     cidade: "Curitiba",
     estado: "PR"
   },
   {
     id: 16,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "1.350,00",
-    name: "KitchenSink Gourmet",
+    category:'automovel',
+    subcaterory:'carro',
+    imgurl: "https://revistacarro.com.br/wp-content/uploads/2023/03/vendas-carros-usados-1280x768.jpg",
+    price: "20.500,00",
+    name: "Carros Novos e Semi-Novos",
     description:
-      "Esta pia de cozinha GourmetProjetado para lidar com panelas de ferro fundido ou quentes resistentes diretamente do forno. Fácil de manter.",
+      "Carros novos e semi-novos! Entre em contato ou venha nos visitar!",
     cidade: "Maringa",
     estado: "SP"
   },
   {
     id: 17,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "378,00",
-    name: "Torneira para Pia de Cozinha",
+    category:'eletronico',
+    subcategory:'computador',
+    imgurl: "https://photos.enjoei.com.br/pc-gamer-completo-intel-i5-rx-580-8gb-68599164/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8yMzU2NzkyMC84Mjg0MGIxZGRkODc1YmRmYzhhZGFlNjM5MmM3Y2VlMy5qcGc",
+    price: "7.799",
+    name: "Computador Gamer",
     description:
-      "Torneira De Pia Cozinha Com Ducha Spray Misturador Monocomando Luxo Prata 9109c Luuk Young ESTÁ AQUI!",
+      "Computador Gamer em otimas condições! Intel i5 9400f, placa de video rx 580 8gb, placa-mae b360m aorus, memoria ram (2x8gb) 2400mhz",
     cidade: "São Paulo",
     estado: "SP"
   },
   {
     id: 18,
+    category:'casa',
+    subcaterory:'cozinha',
     imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
     price: "378,00",
     name: "Torneira para Pia de Cozinha",
@@ -203,16 +241,20 @@ export const productsData = [
   },
   {
     id: 19,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "1.350,00",
-    name: "KitchenSink Gourmet",
+    category:'eletronico',
+    subcategory:'computador',
+    imgurl: "https://photos.enjoei.com.br/pc-gamer-completo-intel-i5-rx-580-8gb-68599164/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8yMzU2NzkyMC84Mjg0MGIxZGRkODc1YmRmYzhhZGFlNjM5MmM3Y2VlMy5qcGc",
+    price: "7.799",
+    name: "Computador Gamer",
     description:
-      "Esta pia de cozinha GourmetProjetado para lidar com panelas de ferro fundido ou quentes resistentes diretamente do forno. Fácil de manter.",
+      "Computador Gamer em otimas condições! Intel i5 9400f, placa de video rx 580 8gb, placa-mae b360m aorus, memoria ram (2x8gb) 2400mhz",
     cidade: "Maringa",
     estado: "SP"
   },
   {
     id: 20,
+    category:'casa',
+    subcaterory:'cozinha',
     imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
     price: "378,00",
     name: "Torneira para Pia de Cozinha",
@@ -222,46 +264,50 @@ export const productsData = [
     estado: "SP"
   },
   {
-    id: 1,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "2.350,90",
-    name: "KitchenSink",
+    id: 25,
+    category:'roupa',
+    subcaterory:'camisa',
+    imgurl:"https://chicorei.imgix.net/16029/ab5aafc0-c93c-11eb-a2ec-9b844242a300.jpg?auto=compress,format&q=65&w=1100&h=1648&fit=crop&crop=top",
+    price: "89.99",
+    name: "Camisa Quadros",
     description:
-      "EProjetado para lidar com panelas de ferro fundido ou quentes resistentes diretamente do forno. Fácil de manter.",
+      "Camisa Masculina e Femina com estampas de quadros de artistas famosos!",
     cidade: "Curitiba",
     estado: "PR"
   },
   {
     id: 22,
-    imgurl: "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg",
-    price: "1.350,00",
-    name: "KitchenSink Gourmet",
+    category:'automovel',
+    subcaterory:'carro',
+    imgurl: "https://revistacarro.com.br/wp-content/uploads/2023/03/vendas-carros-usados-1280x768.jpg",
+    price: "20.500,00",
+    name: "Carros Novos e Semi-Novos",
     description:
-      "Esta pia de cozinha GourmetProjetado para lidar com panelas de ferro fundido ou quentes resistentes diretamente do forno. Fácil de manter.",
+      "Carros novos e semi-novos! Entre em contato ou venha nos visitar!",
     cidade: "Maringa",
     estado: "SP"
   },
   {
     id: 23,
-    imgurl: [
-      "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg"
-    ],
-    price: "378,00",
-    name: "Torneira para Pia de Cozinha",
+    category:'roupa',
+    subcaterory:'camisa',
+    imgurl:"https://chicorei.imgix.net/16029/ab5aafc0-c93c-11eb-a2ec-9b844242a300.jpg?auto=compress,format&q=65&w=1100&h=1648&fit=crop&crop=top",
+    price: "89.99",
+    name: "Camisa Quadros",
     description:
-      "Torneira De Pia Cozinha Com Ducha Spray Misturador Monocomando Luxo Prata 9109c Luuk Young ESTÁ AQUI!",
+      "Camisa Masculina e Femina com estampas de quadros de artistas famosos!",
     cidade: "São Paulo",
     estado: "SP"
   },
   {
     id: 24,
-    imgurl: 
-      "https://m.media-amazon.com/images/I/51hYb8wTf4S.__AC_SX300_SY300_QL70_ML2_.jpg"
-    ,
-    price: "378,00",
-    name: "Torneira para Pia de Cozinha",
+    category:'eletronico',
+    subcategory:'computador',
+    imgurl: "https://photos.enjoei.com.br/pc-gamer-completo-intel-i5-rx-580-8gb-68599164/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8yMzU2NzkyMC84Mjg0MGIxZGRkODc1YmRmYzhhZGFlNjM5MmM3Y2VlMy5qcGc",
+    price: "7.799",
+    name: "Computador Gamer",
     description:
-      "Torneira De Pia Cozinha Com Ducha Spray Misturador Monocomando Luxo Prata 9109c Luuk Young ESTÁ AQUI!",
+      "Computador Gamer em otimas condições! Intel i5 9400f, placa de video rx 580 8gb, placa-mae b360m aorus, memoria ram (2x8gb) 2400mhz",
     cidade: "São Paulo",
     estado: "SP"
   },

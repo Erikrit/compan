@@ -1,0 +1,107 @@
+.anuncio_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 115vh;
+}
+
+.anuncio_container2 {
+  /* background-color: #f7dcf8; */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 1400px;
+}
+
+.anuncio_container2 h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.form_container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.input_group {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: row;
+  position: relative;
+  right: 459px;
+  gap: 20px;
+  font-weight: 600;
+}
+
+.input_group label {
+  margin-bottom: 5px;
+}
+
+.input_group input[type="text"],
+.input_group textarea {
+  width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.descricao_textarea {
+  height: 100px;
+}
+
+
+
+.label_imagens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 2px dashed #d869d8;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.label_imagens:hover {
+  background-color: #ffffff;
+}
+
+.label_imagens span {
+  text-align: center;
+}
+
+.submit_button {
+  display: flex;
+  justify-content: center;
+  width: 180px;
+  height: 53px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #ff69b4;
+  border: 2px solid #ff69b4;
+  border-radius: 25px; /* Deixando mais arredondado */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 20px;
+}
+
+.submit_button:hover {
+  background-color: rgb(250, 250, 250);
+}
+
+.submit_button:active {
+  background-color: #ff69b4; /* Rosa */
+  color: #fff; /* Alterando a cor do texto para branco */
+  border-color: transparent; /* Removendo a borda quando clicado */
+}
+
+.button_group {
+    display: flex;
+    justify-content: center;
+}
