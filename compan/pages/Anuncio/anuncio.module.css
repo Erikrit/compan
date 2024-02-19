@@ -2,106 +2,225 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 115vh;
+  height: 144vh;
 }
 
 .anuncio_container2 {
-  /* background-color: #f7dcf8; */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 1400px;
+  margin-top: 90px;
 }
 
 .anuncio_container2 h2 {
   display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-
-.form_container {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.input_group {
-  display: flex;
-  margin-bottom: 20px;
-  flex-direction: row;
+  justify-content: left;
   position: relative;
-  right: 459px;
-  gap: 20px;
-  font-weight: 600;
+  left: 18px;
+  margin-top: 10px;
+  margin-bottom: 18px;
 }
 
-.input_group label {
-  margin-bottom: 5px;
-}
-
-.input_group input[type="text"],
-.input_group textarea {
-  width: 500px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  outline: none;
-}
-
-.descricao_textarea {
-  height: 100px;
-}
-
-
-
-.label_imagens {
+.abas_container{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  height: 200px;
-  padding: 20px;
-  background-color: #f0f0f0;
-  border: 2px dashed #d869d8;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  width: 50%;
 }
 
-.label_imagens:hover {
-  background-color: #ffffff;
-}
-
-.label_imagens span {
+.aba {
+  flex: 1;
   text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-top-right-radius: 20px; 
+  border-top-left-radius: 20px; 
+  
 }
 
-.submit_button {
+.aba:not(:last-child) {
+  margin-right: -1px;
+}
+
+.aba_ativa {
+  background-color: #fff;
+}
+
+.aba:not(.aba_ativa) {
+  background-color: #f0f0f0;
+}
+
+.inserir_dados_container{
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+.contaner_dados{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+.cabecalho_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #e6e5e5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cabecalho_container2{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #e6e5e5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cabecalho{
+  position: relative;
+  left: 10px;
+  margin-top: 10px;
+}
+
+.obrigatorio{
+  position: relative;
+  right: 10px;
+  margin-top: 10px;
+}
+
+.input_group{
+  margin: 10px;
+  display: flex;
+  margin-right: -110px;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.textarea_descricao,
+.input_text {
+  width: 50%;
+  height: 40px; 
+  border: 1px solid #ccc;
+}
+
+.input_CEP_text{
+width: 42%;
+height: 40px; 
+border: 1px solid #ccc;
+}
+
+.select_categoria,
+.select_estado,
+.select_cidade {
+  width: 50%;
+  height: 40px; 
+  border: 1px solid #ccc;
+}
+
+.input_endereco{
+  display: flex;
+
+}
+
+.input_endereco_text{
+  width: 301%;
+  height: 40px; 
+  border: 1px solid #ccc;
+}
+
+.input_group label{
+  font-weight: 700;
+}
+
+.input_descricao_text{
+  width: 50%;
+  height: 100px; 
+  border: 1px solid #ccc;
+}
+
+.button_group{
+  margin: 20px;
   display: flex;
   justify-content: center;
-  width: 180px;
-  height: 53px;
-  padding: 10px 20px;
-  background-color: transparent;
-  color: #ff69b4;
-  border: 2px solid #ff69b4;
-  border-radius: 25px; /* Deixando mais arredondado */
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+}
+
+.next_button{
+  background-color: #b4b4b4; 
+  color: #fff; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 10px; 
+  cursor: pointer; 
+}
+
+.input_imagens_label {
+  display: flex;
+    padding: 10px 20px;
+    border: 2px dashed #9b9b9b;
+    color: #a5a4a4;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_imagens_label:hover {
+  background-color: #e4e4e4; 
+}
+
+.input_imagens {
+  display: none;
+}
+
+/* ABA PROMOVER */
+
+.info_ofertas{
+  margin: 20px;
+}
+
+.info_buttons{
+  display: flex;
+  justify-content: space-around;
   margin-bottom: 20px;
 }
 
-.submit_button:hover {
-  background-color: rgb(250, 250, 250);
+.gratis_button{
+  background-color: #b4b4b4; 
+  color: #fff; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 10px; 
+  cursor: pointer; 
 }
 
-.submit_button:active {
-  background-color: #ff69b4; /* Rosa */
-  color: #fff; /* Alterando a cor do texto para branco */
-  border-color: transparent; /* Removendo a borda quando clicado */
+.promova_button{
+  background-color: #ff69b4; 
+  color: #fff; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 10px; 
+  cursor: pointer; 
 }
 
-.button_group {
-    display: flex;
-    justify-content: center;
+/* ABA PUBLICAR */
+
+.botao_publicar {
+  background-color: #ff69b4; 
+  color: #fff; 
+  border: none; 
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.botao_publicar:hover {
+  opacity: 0.8; 
 }

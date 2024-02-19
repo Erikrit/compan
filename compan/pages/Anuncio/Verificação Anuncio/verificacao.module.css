@@ -1,0 +1,32 @@
+.inserir_dados_container{
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.contaner_dados{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+.cabecalho_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: #e6e5e5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cabecalho{
+    position: relative;
+    left: 10px;
+    margin-top: 10px;
+}
+
+.resumo_info{
+    margin: 15px;
+}
