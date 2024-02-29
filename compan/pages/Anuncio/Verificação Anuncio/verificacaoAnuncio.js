@@ -9,7 +9,10 @@ export const VerificacaoAnuncio = ({
   endereco,
   nome,
   descricao,
+  valor,
 }) => {
+
+    
   return (
     <div className={styles.inserir_dados_container}>
       <div className={styles.contaner_dados}>
@@ -34,6 +37,9 @@ export const VerificacaoAnuncio = ({
         </p>
         <p>
           <strong>Título do Anúncio:</strong> {nome}
+        </p>
+        <p>
+          <strong>Valor:</strong> {valor}
         </p>
         <p>
           <strong>Descrição:</strong> {descricao}

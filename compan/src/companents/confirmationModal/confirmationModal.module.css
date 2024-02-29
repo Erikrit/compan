@@ -1,0 +1,19 @@
+
+.confirmationModal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .confirmationModal .btn-publicar {
+    background-color: #ff69b4;
+    border-color: #ff69b4;
+  }
+  
+  .confirmationModal .modal-dialog {
+    max-width: 80%;
+  }
+  
+  .confirmationModal .modal-content {
+
+  }

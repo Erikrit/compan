@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 144vh;
+  height: 160vh;
 }
 
 .anuncio_container2 {
@@ -114,6 +114,12 @@ height: 40px;
 border: 1px solid #ccc;
 }
 
+.input_valor_text{
+  width: 10%;
+  height: 40px; 
+  border: 1px solid #ccc;
+}
+
 .select_categoria,
 .select_estado,
 .select_cidade {
@@ -157,6 +163,7 @@ border: 1px solid #ccc;
   border-radius: 10px; 
   cursor: pointer; 
 }
+
 
 .input_imagens_label {
   display: flex;
@@ -212,12 +219,16 @@ border: 1px solid #ccc;
 /* ABA PUBLICAR */
 
 .botao_publicar {
+  display: flex;
+  align-items: center;
   background-color: #ff69b4; 
   color: #fff; 
   border: none; 
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  position: relative;
+  bottom: 105px;
 }
 
 

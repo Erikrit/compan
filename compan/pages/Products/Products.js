@@ -4,6 +4,8 @@ import BreadCrums from '../../src/companents/BreadCrums/BreadCrums'
 
 import ShopContext from '../../src/context/ShopContext'
 import { productsData } from '../../src/companents/Assets/data'
+import ProductDisplay from '../../src/companents/ProductDisplay/ProductDisplay'
+import { DescriptionBox } from '../../src/companents/DescriptionBox/DescriptionBox'
 
 
 
@@ -18,7 +20,9 @@ const Products = () => {
 
   return (
     <div>
-      <BreadCrums product={product} />
+      <BreadCrums product={product}/>
+      <ProductDisplay product={product}/>
+      <DescriptionBox product={product}/>
     </div>
   )
 }

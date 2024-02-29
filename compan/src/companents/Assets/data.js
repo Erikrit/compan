@@ -158,7 +158,7 @@ export const productsData = [
   {
     id: 12,
     category:'eletronico',
-    subcategory:'computador',
+    subcaterory:'computador',
     imgurl: "https://photos.enjoei.com.br/pc-gamer-completo-intel-i5-rx-580-8gb-68599164/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8yMzU2NzkyMC84Mjg0MGIxZGRkODc1YmRmYzhhZGFlNjM5MmM3Y2VlMy5qcGc",
     price: "7.799",
     name: "Computador Gamer",
@@ -182,7 +182,7 @@ export const productsData = [
   {
     id: 14,
     category:'eletronico',
-    subcategory:'computador',
+    subcaterory:'computador',
     imgurl: "https://photos.enjoei.com.br/pc-gamer-completo-intel-i5-rx-580-8gb-68599164/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8yMzU2NzkyMC84Mjg0MGIxZGRkODc1YmRmYzhhZGFlNjM5MmM3Y2VlMy5qcGc",
     price: "7.799",
     name: "Computador Gamer",
@@ -194,7 +194,7 @@ export const productsData = [
   {
     id: 15,
     category:'eletronico',
-    subcategory:'computador',
+    subcaterory:'computador',
     imgurl: "https://photos.enjoei.com.br/pc-gamer-completo-intel-i5-rx-580-8gb-68599164/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8yMzU2NzkyMC84Mjg0MGIxZGRkODc1YmRmYzhhZGFlNjM5MmM3Y2VlMy5qcGc",
     price: "7.799",
     name: "Computador Gamer",
@@ -218,7 +218,7 @@ export const productsData = [
   {
     id: 17,
     category:'eletronico',
-    subcategory:'computador',
+    subcaterory:'computador',
     imgurl: "https://photos.enjoei.com.br/pc-gamer-completo-intel-i5-rx-580-8gb-68599164/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8yMzU2NzkyMC84Mjg0MGIxZGRkODc1YmRmYzhhZGFlNjM5MmM3Y2VlMy5qcGc",
     price: "7.799",
     name: "Computador Gamer",
@@ -242,7 +242,7 @@ export const productsData = [
   {
     id: 19,
     category:'eletronico',
-    subcategory:'computador',
+    subcaterory:'computador',
     imgurl: "https://photos.enjoei.com.br/pc-gamer-completo-intel-i5-rx-580-8gb-68599164/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8yMzU2NzkyMC84Mjg0MGIxZGRkODc1YmRmYzhhZGFlNjM5MmM3Y2VlMy5qcGc",
     price: "7.799",
     name: "Computador Gamer",
@@ -302,7 +302,7 @@ export const productsData = [
   {
     id: 24,
     category:'eletronico',
-    subcategory:'computador',
+    subcaterory:'computador',
     imgurl: "https://photos.enjoei.com.br/pc-gamer-completo-intel-i5-rx-580-8gb-68599164/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8yMzU2NzkyMC84Mjg0MGIxZGRkODc1YmRmYzhhZGFlNjM5MmM3Y2VlMy5qcGc",
     price: "7.799",
     name: "Computador Gamer",

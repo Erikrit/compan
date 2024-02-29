@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import estadosCidades from "../../src/companents/Assets/estados-cidades.json";
 import { useRef } from "react";
 import { VerificacaoAnuncio } from "./Verificação Anuncio/verificacaoAnuncio";
+import ConfirmationModal from "../../src/companents/confirmationModal/confirmationModal";
 
 const categorias = {
   Eletronicos: ["Celular", "Computador", "Notebook", "Headset"],
@@ -26,6 +27,8 @@ const Anuncio = () => {
   const [descricao, setDescricao] = useState("");
   const [totalAbas, setTotalAbas] = useState(3);
   const inputImagensRef = useRef(null);
+  const [valor, setValor] = useState("");
+  const [showConfirmationModal, setShowConfirmationModal] = useState(false);
 
   useEffect(() => {
     if (estadoSelecionado) {
@@ -77,6 +80,10 @@ const Anuncio = () => {
     setCep(event.target.value);
   };
 
+  const handleValorChange = (event) => {
+    setValor(event.target.value);
+  };
+
   const handleEnderecoChange = (event) => {
     setEndereco(event.target.value);
   };
@@ -97,6 +104,11 @@ const Anuncio = () => {
     setImagens(files);
   };
 
+
+  
+
+
+
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log({
@@ -107,6 +119,7 @@ const Anuncio = () => {
       endereco,
       nome,
       descricao,
+      valor,
     });
   };
 
@@ -119,8 +132,20 @@ const Anuncio = () => {
   };
 
   const handlePublicarClick = () => {
-    // FAZER A LOGICA
+    setModalAberto(true); 
+  };
+
+  const handleOpenConfirmationModal = () => {
+    setShowConfirmationModal(true);
+  };
+
+  const handleCloseConfirmationModal = () => {
+    setShowConfirmationModal(false);
+  };
+
+  const handleConfirmPublish = () => {
     console.log("Anúncio publicado!");
+    handleCloseConfirmationModal();
   };
 
   return (
@@ -245,6 +270,16 @@ const Anuncio = () => {
                 />
               </div>
               <div className={styles.input_group}>
+                <label htmlFor="input_valor">*Valor:</label>
+                <input
+                  type="number"
+                  id="input_valor"
+                  value={valor}
+                  onChange={handleValorChange}
+                  className={styles.input_valor_text}
+                />
+              </div>
+              <div className={styles.input_group}>
                 <label htmlFor="textarea_descricao">*Descrição:</label>
                 <textarea
                   id="textarea_descricao"
@@ -337,14 +372,23 @@ const Anuncio = () => {
               endereco={endereco}
               nome={nome}
               descricao={descricao}
+              valor={valor}
             />
+            <div className={styles.info_buttons}>
             <button
-              type="submit"
-              className={`${styles.submit_button} ${styles.botao_publicar}`}
-              onClick={handlePublicarClick}
-            >
-              Publicar
-            </button>
+          type="button"
+          className={`${styles.submit_button} ${styles.botao_publicar}`}
+          onClick={handleOpenConfirmationModal}
+        >
+          Publicar
+        </button>
+
+        <ConfirmationModal
+          showModal={showConfirmationModal}
+          handleClose={handleCloseConfirmationModal}
+          handleConfirmPublish={handleConfirmPublish}
+        />
+            </div>
           </div>
         )}
       </div>
